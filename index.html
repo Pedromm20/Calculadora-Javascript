@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculadora.css">
+    <script src="calculadora.js" defer></script>
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="screen" class="screen" readonly />
+        <input type="button" value="Cambiar Tema" class="theme-btn">
+        
+        <div class="keys">
+            <input type="button" value="7" onclick="añadirAPantalla('7')" class="btn" />
+            <input type="button" value="8" onclick="añadirAPantalla('8')" class="btn" />
+            <input type="button" value="9" onclick="añadirAPantalla('9')" class="btn" />
+            <input type="button" value="/" onclick="añadirAPantalla('/')" class="operator" />
+            <input type="button" value="%" onclick="calcularPorcentaje()" class="btn" />
+            <input type="button" value="4" onclick="añadirAPantalla('4')" class="btn" />
+            <input type="button" value="5" onclick="añadirAPantalla('5')" class="btn" />
+            <input type="button" value="6" onclick="añadirAPantalla('6')" class="btn" />
+            <input type="button" value="*" onclick="añadirAPantalla('*')" class="operator" />
+            <input type="button" value="^2" onclick="calcularPotencia(2)" class="operator" />
+            <input type="button" value="1" onclick="añadirAPantalla('1')" class="btn" />
+            <input type="button" value="2" onclick="añadirAPantalla('2')" class="btn" />
+            <input type="button" value="3" onclick="añadirAPantalla('3')" class="btn" />
+            <input type="button" value="-" onclick="añadirAPantalla('-')" class="operator" />
+            <input type="button" value="√" onclick="calcularRaizCuadrada()" class="operator" />
+            <input type="button" value="0" onclick="añadirAPantalla('0')" class="btn" />
+            <input type="reset" value="C" onclick="limpiarPantalla()" class="btn clear" />
+            <input type="button" value="=" onclick="calcular()" class="btn equals" />
+            <input type="button" value="+" onclick="añadirAPantalla('+')" class="operator" />
+            <input type="button" value="⌫" onclick="borrarDigito()" class="btn" />
+        </div>
+        
+    </div>
+</body>
+</html>
