@@ -21,7 +21,7 @@
 
 .keys {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Cuatro columnas */
+    grid-template-columns: repeat(5, 1fr); /* Cinco columnas */
     gap: 5px; /* Espacio entre los botones */
 }
 
